@@ -1,0 +1,15 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/ngx-sockets",
+  "lib": {
+    "entryFile": "src/public-api.ts",
+    "umdModuleIds": {
+      "socket.io-client": "socket-client"
+    }
+  },
+  "whitelistedNonPeerDependencies": [
+    "tslib",
+    "socket.io-client",
+    "rxjs"
+  ]
+}
