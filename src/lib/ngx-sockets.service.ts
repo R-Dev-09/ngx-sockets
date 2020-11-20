@@ -16,6 +16,14 @@ export class NgxSocket {
     return this.ioSocket.id;
   }
 
+  public get connected(): boolean {
+    return this.ioSocket.connected;
+  }
+
+  public get disconnected(): boolean {
+    return this.ioSocket.disconnected;
+  }
+
   public open(): Socket {
     return this.ioSocket.open();
   }
@@ -52,7 +60,7 @@ export class NgxSocket {
     return this.ioSocket.prependAny(listener);
   }
 
-  public offAny(listener: (event: string, ...args: any[]) => void): Socket {
+  public offAny(listener?: (event: string, ...args: any[]) => void): Socket {
     return this.ioSocket.offAny(listener);
   }
 

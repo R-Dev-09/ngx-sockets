@@ -1,8 +1,16 @@
 {
   "name": "ngx-sockets",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "vd.dev",
   "schematics": "./schematics/collection.json",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:R-Dev-09/ngx-sockets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/R-Dev-09/ngx-sockets/issues"
+  },
+  "homepage": "https://github.com/R-Dev-09/ngx-sockets#readme",
   "scripts": {
     "build": "../../node_modules/.bin/tsc -p tsconfig.schematics.json",
     "copy:schemas": "cp --parents schematics/*/schema.json ../../dist/my-lib/",
